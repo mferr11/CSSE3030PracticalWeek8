@@ -31,14 +31,3 @@ pitest {
     targetTests = ['csse3030.week8.*']
     outputFormats = ['HTML']
 }
-
-// testQ1, testQ3, and testQ5 all run the same underlying PIT analysis.
-// What differs between questions is the content of the test sources at
-// the time each task is run, not the task configuration itself.
-['testQ1', 'testQ3', 'testQ5'].each { taskName ->
-    tasks.register(taskName) {
-        group = 'verification'
-        description = "Runs PIT mutation testing (alias for ${taskName})."
-        dependsOn tasks.named('pitest')
-    }
-}
