@@ -50,7 +50,7 @@ public class InvoiceCalculator {
      * @return the discounted total
      */
     public double applyLoyaltyDiscount(double total, int loyaltyYears) {
-        // TODO (Q4): implement according to the specification above.
+        // TODO (Q5): implement according to the specification above.
         // Remove the Exception when you've implemented this function.
         throw new UnsupportedOperationException("TODO: implement applyLoyaltyDiscount");
     }
